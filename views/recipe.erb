@@ -1,0 +1,24 @@
+<div class="back">
+  <a href="/">Back to Home</a>
+</div>
+
+<div class="name">
+  <h1><%= @recipe.name %></h1>
+</div>
+
+
+<div class="description">
+  <h2>About <%= @recipe.name %>...</h2>
+  <%= @recipe.description %>
+</div>
+
+<div class="more_info">
+  <p>Rating: <%= @recipe.rating %></p>
+  <p>Prep time: <%= @recipe.prep_time %></p>
+</div>
+
+<div class="delete">
+  <form action="/">
+      <input type="submit" value="Delete recipe" />
+  </form>
+</div>

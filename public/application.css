@@ -1,0 +1,94 @@
+.container {
+  background-color: bisque;
+  padding: 4rem;
+  height: 100vh;
+  width: 80%;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.new_recipe {
+  padding: 20px;
+  width: 400px;
+  background-color: burlywood;
+  border-radius: 8px;
+}
+
+.recipe_list{
+  padding-bottom: 20px;
+}
+
+.recipe_list ul{
+  padding-left: 1rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.recipe_list li {
+  padding-bottom: 0.8rem;
+}
+
+.recipe_list a {
+  text-decoration: none;
+  color: black;
+}
+
+.recipe_list li:hover{
+  scale: 1.01;
+}
+
+.recipe_list a:hover {
+  color:sienna;
+}
+
+.form_row {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-bottom: 4px;
+}
+
+.form_row label {
+  display: flex;
+  /* flex: 1 */
+  width: 40%;
+}
+
+input {
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid black;
+  width: 60%;
+}
+
+input[type="submit"] {
+  width: 8rem;
+  outline: none;
+  border: 1px solid black;
+  padding: 0.2rem 0.8rem 0.2rem;
+  border-radius: 8px;
+}
+
+
+h1 {
+  font-weight: 600;
+}
+
+
+/* recipe */
+
+.back {
+  margin-bottom: 40px;
+}
+
+.description {
+  padding: 2rem 0 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
