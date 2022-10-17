@@ -35,10 +35,6 @@
   color: black;
 }
 
-.recipe_list li:hover{
-  scale: 1.01;
-}
-
 .recipe_list a:hover {
   color:sienna;
 }
