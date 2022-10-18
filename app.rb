@@ -15,22 +15,28 @@ configure :development do
   BetterErrors.application_root = File.expand_path(__dir__)
 end
 
-get "/" do
+get '/' do
   @recipes = cookbook.all
   erb :index
 end
 
-get "/recipe/:id" do
+get '/recipe/:id' do
   @recipe = cookbook.all[params[:id].to_i]
   erb :recipe
 end
 
-# get #new(form)
+get '/new' do
+  erb :new
+end
 
-post "/" do
-  # raise
+post '/' do
   @recipe = Recipe.new(params[:name], params[:description], params[:rating], params[:done], params[:prep_time])
   cookbook.add_recipe(@recipe)
   @recipes = cookbook.all
   erb :index
+end
+
+get '/delete/:id' do
+  cookbook.remove_recipe(params[:id].to_i)
+  redirect to '/'
 end

@@ -1,24 +1,18 @@
-<div class="back">
-  <a href="/">Back to Home</a>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Recipes</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><%= @recipe.name %></li>
+  </ol>
+</nav>
+
+<div class="row mb-3">
+    <h1><%= @recipe.name %></h1>
 </div>
 
-<div class="name">
-  <h1><%= @recipe.name %></h1>
-</div>
-
-
-<div class="description">
-  <h2>About <%= @recipe.name %>...</h2>
-  <%= @recipe.description %>
-</div>
-
-<div class="more_info">
-  <p>Rating: <%= @recipe.rating %></p>
-  <p>Prep time: <%= @recipe.prep_time %></p>
-</div>
-
-<div class="delete">
-  <form action="/">
-      <input type="submit" value="Delete recipe" />
-  </form>
+<div class="card">
+  <div class="card-body">
+    <p class="lead"> <%= @recipe.description %></p></p>
+    <p class="text-muted">Rating: <%= @recipe.rating %> / 5</p>
+    <p class="text-muted">Prep time: <%= @recipe.prep_time %></p>
+  </div>
 </div>
