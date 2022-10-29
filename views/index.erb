@@ -12,12 +12,8 @@
     <div class="col-sm-4">
       <div class="card mb-3">
         <div class="card-body">
-          <h5 class="card-title text-dark">
-            <%=  recipe.name%>
-          </h5>
-          <p class="card-text text-muted">
-            <%=  recipe.description%>
-          </p>
+          <h5 class="card-title text-dark"><%= recipe.name %></h5>
+          <p class="card-text text-muted"><%=  recipe.description%></p>
           <a class="btn btn-outline-secondary" href="recipe/<%= index%>">Read More</a>
           <a class="btn btn-outline-danger" href="/delete/<%= index%>">Delete</a>
         </div>

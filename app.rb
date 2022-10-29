@@ -30,7 +30,11 @@ get '/new' do
 end
 
 post '/' do
-  @recipe = Recipe.new(params[:name], params[:description], params[:rating], params[:done], params[:prep_time])
+  @recipe = Recipe.new(params[:name],
+                       params[:description],
+                       params[:rating],
+                       params[:done],
+                       params[:prep_time])
   cookbook.add_recipe(@recipe)
   @recipes = cookbook.all
   erb :index
